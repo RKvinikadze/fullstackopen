@@ -1,13 +1,121 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 10px 0 40px 0;
+  font-family: 'Manrope', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0 20px;
+  text-align: center;
+  background-color: rgb(222, 227, 230);
+}
+
+.container{
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form div{
+  margin: 5px 0;
+}
+
+h1, h2{
+  margin: 12px 0;
+  text-transform: capitalize;
+}
+
+.label-input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+  text-transform: capitalize;
+}
+
+.label-input input{
+  height: 27px;
+  width: 200px;
+  border: 2px solid blue;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color:  rgb(233, 233, 233);
+}
+
+.addButton{
+  margin: 20px 0;
+  width: 100%;
+  height: 32px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid green;
+  background-color:  rgb(233, 233, 233);
+  cursor: pointer;
+}
+
+.addButton:hover{
+  background-color: green;
+  color: white;
+}
+
+.Person{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.Person p, .Person button{
+  width: 33%;
+}
+
+.Person button{
+  float: right;
+  width: 80px;
+  height: 27px;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(233, 233, 233);
+  color: black;
+  border: 2px solid rgb(194, 7, 7);
+  cursor: pointer;
+}
+
+.Person button:hover{
+  background-color:rgb(194, 7, 7);
+  color: white;
+}
+
+.Name{
+  text-align: left;
+}
+
+.success{
+  margin: 20px 0;
+  padding: 5px 15px;
+  font-size: 20px;
+  border: 3px solid green;
+  background-color: lightgray;
+  border-radius: 10px;
+  color: green;
+}
+
+.error{
+  margin: 20px 0;
+  padding: 5px 15px;
+  font-size: 20px;
+  border: 3px solid red;
+  background-color: lightgray;
+  border-radius: 10px;
+  color: red;
 }
