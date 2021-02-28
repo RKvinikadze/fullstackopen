@@ -1,1 +1,1 @@
-# bloglist-backend
+# bloglist-extended
